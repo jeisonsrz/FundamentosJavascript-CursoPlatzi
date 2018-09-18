@@ -1,2 +1,2 @@
-#🤖💻Eureka! Technology
-##FundamentosJavascript-CursoPlatzi
+# 🤖💻Eureka! Technology
+## FundamentosJavascript-CursoPlatzi
