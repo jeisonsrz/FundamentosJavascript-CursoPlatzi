@@ -13,16 +13,8 @@ var str = nombre.charAt(1) + nombre.charAt(2);
 
 var str2 = nombre.substr(1,2);
 
-<<<<<<< HEAD
-var nombreUsuario= prompt('Cual es tu nombre?'); //pregunta cual es tu nombre
+var nombreUsuario= prompt('Cual es tu nombre?'); //pregunta cual es tu nombre del usuario
 
-var totalLetrasNombreU= nombreUsuario.length;  //deterina cuantas letras tiene el nombre
+var totalLetrasNombreU= nombreUsuario.length;  //deterina cuantas letras tiene el nombre del u.
 
-var ultimaLetraNombre = nombreUsuario.substr((totalLetrasNombreU-1),1); //ultima letra nombre
-=======
-var nombreUsuario= prompt('Cual es tu nombre?');
-
-var totalLetrasNombreU= nombreUsuario.length;
-
-var ultimaLetraNombre = nombreUsuario.substr((totalLetrasNombreU-1),1);
->>>>>>> 60337cc163afa9ed9d43507b7b3964965231ff8f
+var ultimaLetraNombre = nombreUsuario.substr((totalLetrasNombreU-1),1); //ultima letra nombre del u.
