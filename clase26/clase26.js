@@ -8,9 +8,18 @@ class Persona{
         
     }
 
-    saludar (){
+    saludar (fn){
+            /*  var nombre=this.nombre;
+        var apellido=this.apellido; */
+
+        var {nombre,apellido} = this;
+
         console.log(`Hola, yo me llamo ${this.nombre} ${this.apellido}.`)
 
+        if(fn){
+
+            fn(nombre,apellido,false)
+        }
     }
 
     soyAlto () {
@@ -32,17 +41,38 @@ class Desarrollador extends Persona{
             
     }
     
-    saludar(){
+    saludar(fn){
+
+      /*  var nombre=this.nombre;
+        var apellido=this.apellido; */
+
+        var {nombre,apellido} = this;
 
         console.log(`Hola ke ace, me llamo ${this.nombre} ${this.apellido} y soy desarrollador.`)
 
+        if(fn){
+            fn(nombre,apellido,true)
+        }
+   
     }
 
 }
 
 
-/*var jeison = new Persona('Jeison', 'Ruiz',1.92);
+function responderSaludo(nombre,apellido,esDev){
+    console.log(`Buen día ${nombre} ${apellido} `)
+
+    if(esDev){
+        console.log(`Baia baia, no sabia que eras desarrollador/a`)
+    }
+
+}
+
+var jeison = new Persona('Jeison', 'Ruiz',1.92);
 var camilo = new Persona('camilo', 'casas',1.43);
-var julian = new Persona('julian', 'perez',1.65);
-*/
+var julian = new Desarrollador('julian', 'perez',1.65);
+
+jeison.saludar()
+camilo.saludar(responderSaludo)
+julian.saludar(responderSaludo)
 
