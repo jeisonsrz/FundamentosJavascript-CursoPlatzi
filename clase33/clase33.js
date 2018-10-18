@@ -15,14 +15,17 @@ function obtenerPersonaje(id){
 
         $
         .get(url,opts,function(data){
-
+            console.log('examen')
+            console.log(data.name)
             resolve(data)
         })
+        
         .fail(() => reject(id))
    
          })
-
+         
     }
+    console.log('jeison')
   
 
 
